@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/windowBackground">
+
+    <TextView
+        android:text="Typing Speed Test"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="32dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RadioGroup
+        android:id="@+id/timeGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/time15"
+            android:text="15 seconds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/time30"
+            android:text="30 seconds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/time60"
+            android:text="60 seconds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/startBtn"
+        android:text="Start Typing Test"
+        android:layout_marginTop="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Switch
+        android:id="@+id/themeSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:layout_marginTop="24dp"
+        android:text="Toggle Dark Mode" />
+</LinearLayout>
